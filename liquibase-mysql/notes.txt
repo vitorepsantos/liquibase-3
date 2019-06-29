@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# https://hub.docker.com/_/mysql
+$ docker run --name mysql-liquibase -e MYSQL_ROOT_PASSWORD=usingliquibase -d mysql:latest
+$ docker ps #verificar se está executando
+$ docker inspect mysql-liquibase #pegar dados para conexão

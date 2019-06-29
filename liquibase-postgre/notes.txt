@@ -1,0 +1,15 @@
+$ docker run --name some-postgres -e POSTGRES_PASSWORD=postgres -d postgres
+$ docker ps
+$ docker inspect some-postgres
+
+$ docker run -p 80:80 \
+        -e "PGADMIN_DEFAULT_EMAIL=user@domain.com" \
+        -e "PGADMIN_DEFAULT_PASSWORD=SuperSecret" \
+        -d dpage/pgadmin4
+
+$ docker ps
+$ docker inspect happy_kalam
+
+http://172.17.0.3/login
+
+$ mvn liquibase:update

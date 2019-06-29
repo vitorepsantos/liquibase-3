@@ -1,0 +1,3 @@
+databaseChangeLog:
+    - include:
+        file: db/changes/2019-05-02-create-db.xml
